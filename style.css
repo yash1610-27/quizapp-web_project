@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("wallpaper1.jpg");
+    font-family: "Poppins", sans-serif; /* Custom font */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.app {
+    background: #e45909d5;
+    width: 90%;
+    max-width: 600px;
+    margin: 10px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+    transition: background 0.3s ease; /* Smooth background transition */
+}
+
+.app:hover {
+    background: #c29c16; /* Lighter blue background on hover */
+}
+
+.app h1 {
+    font-size: 25px;
+    color: #4c1a7e; /* Darker blue text */
+    font-weight: 600;
+    border-bottom: 2px solid #1a237e; /* Thicker border */
+    padding-bottom: 15px;
+}
+
+.quiz {
+    padding: 20px 0;
+}
+
+.quiz h2 {
+    font-size: 18px;
+    color: #e0e1f1;
+    font-weight: 600;
+    transition: color 0.3s ease; /* Smooth text color transition */
+}
+
+.btn {
+    background: #bbdefb; /* Light blue button background */
+    color: #1a237e;
+    font-weight: 500;
+    width: 100%;
+    border: 2px solid #1a237e; /* Darker blue border */
+    padding: 12px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.1s ease; /* Smooth button transition */
+}
+
+.btn:hover {
+    background: #1a237e; /* Darker blue background on hover */
+    color: #fff;
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+#next-btn {
+    background: #1a237e;
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    border: none;
+    padding: 12px;
+    margin: 20px auto 0;
+    border-radius: 8px;
+    cursor: pointer;
+    display: none;
+    transition: background 0.3s ease, transform 0.1s ease; /* Smooth button transition */
+}
+
+#next-btn:hover {
+    background: #0d47a1; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.correct {
+    background: #4caf50; /* Green background for correct answer */
+}
+
+.incorrect {
+    background: #f44336; /* Red background for incorrect answer */
+}
+
+.progress-bar {
+    height: 10px;
+    background: #111111; /* Green progress bar color */
+    width: 0;
+    transition: width 0.5s ease; /* Smooth width transition */
+}
